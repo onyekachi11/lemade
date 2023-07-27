@@ -45,12 +45,14 @@ const Carousel = () => {
     <section className="banner-container">
       <Slider {...settings}>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider1.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        {/* <div className="bg-[url('../src/assets/slider1.png')] h-60 w-full bg-no-repeat bg-center bg-cover"> */}
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493177/slider1_bqakuu.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider2.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        {/* <div className="bg-[url('../src/assets/slider2.png')] h-60 w-full bg-no-repeat bg-center bg-cover"> */}
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493163/slider2_kv1jpc.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
