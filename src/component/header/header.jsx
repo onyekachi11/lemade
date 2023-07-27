@@ -3,7 +3,7 @@ import Facebook from '../../assets/facebook.png'
 import Whatsapp from '../../assets/Whatsapp.png'
 import Instagram from '../../assets/Instagram.png'
 import Globe from '../../assets/Globe.png'
-import Location from '../../assets/location.png'
+import Location from '../../assets/Location.png'
 import LemadeLogo from '../../assets/Le-Made-World.png'
 import { HambergerMenu } from 'iconsax-react'
 
