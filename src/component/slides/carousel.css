@@ -1,0 +1,40 @@
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+  
+  }
+  
+  .individual-slids {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    
+    
+  }
+  
+  .slide-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 976px) {
+    .banner-container {
+      /* width: 80%; */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner-container {
+      /* width: 60%; */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-container {
+      width: 100%;
+    }
+  }
+  
