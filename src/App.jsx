@@ -2,8 +2,9 @@ import { useState } from 'react'
 import Header from './component/header/header'
 import './App.css'
 import Herosection from './pages/landingpage/herosection'
-import Slides from './component/slides/slides'
 import Carousel from './component/slides/carousel'
+import Summeroff from './component/summeroff'
+import Services from './component/services'
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
       </div>
       <main className='h-screen w-screen'>
         <Herosection />
-        {/* <Slides/> */}
         <Carousel/>
+        <Summeroff/>
+        <Services/>
       </main>
     </>
   )

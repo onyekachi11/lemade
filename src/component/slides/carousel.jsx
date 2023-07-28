@@ -11,6 +11,7 @@ const Carousel = () => {
     autoplay: true,
     autoplayspeed: 4000,
     infinite: true,
+    arrows:false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
