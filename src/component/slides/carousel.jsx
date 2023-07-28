@@ -57,32 +57,32 @@ const Carousel = () => {
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider3.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493172/slider3_dvz7ag.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider4.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493166/slider4_b7tgze.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider5.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493173/slider5_ww4zuk.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider6.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493171/slider6_euolkz.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider7.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493177/slider7_vak10y.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
         <div className="py-3">
-        <div className="bg-[url('../src/assets/slider8.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
+        <div className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690493170/slider8_ntc6up.png')] h-60 w-full bg-no-repeat bg-center bg-cover">
           <div className="backdrop-brightness-100 bg-black/50 h-full w-full"></div>
         </div>
         </div>
