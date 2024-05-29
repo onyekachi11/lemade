@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Facebook from '../../assets/facebook.png'
 import Whatsapp from '../../assets/Whatsapp.png'
 import Instagram from '../../assets/Instagram.png'
@@ -6,11 +6,14 @@ import Globe from '../../assets/Globe.png'
 import Location from '../../assets/Location.png'
 import LemadeLogo from '../../assets/Le-Made-World.png'
 import { HambergerMenu } from 'iconsax-react'
+import { Context } from '../../context'
+import Menu from '../menu'
 
 const Header = () => {
+    const {openMenu, setOpenMenu} = useContext(Context)
   return (
     <header  >
-        <section className='bg-purple-700 px-2'>
+        {/* <section className='bg-purple-700 px-2'>
             <div className='flex justify-between w-full items-center p-1'  >
                 <div className='flex flex-row space w-1/4 justify-between'>
                     <div>
@@ -38,9 +41,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         <section className='bg-white p-3 flex justify-between items-center' >
-            <div className=' hidden md:block '>
+            <div className=' hidden md:block  '>
                 <p>Home</p>
                 <p>Gallery</p>
                 <p>Services</p>
@@ -53,10 +56,11 @@ const Header = () => {
                 <p>Gallery</p>
                 <p>Services</p>
             </div>
-            <div>
-                <HambergerMenu/>
-            </div>
+            <div className='md:hidden sm'> 
+                <HambergerMenu onClick={()=> setOpenMenu(!openMenu)}/>
+            </div> 
         </section>
+
   </header>
   )
 }

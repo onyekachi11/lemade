@@ -3,15 +3,17 @@ import Header from './component/header/header'
 import './App.css'
 import Herosection from './pages/landingpage/herosection'
 import Carousel from './component/slides/carousel'
-import Summeroff from './component/summeroff'
-import Services from './component/services'
+import Summeroff from './pages/landingpage/summeroff'
+import Services from './pages/landingpage/services'
+import Footer from './pages/landingpage/footer'
+import AboutUs from './pages/aboutUs'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='relative'>
       <div className=' w-screen '>
         <Header/>
       </div>
@@ -19,9 +21,11 @@ function App() {
         <Herosection />
         <Carousel/>
         <Summeroff/>
-        <Services/>
+        {/* <Services/> */}
+        <AboutUs/>
+        <Footer/>
       </main>
-    </>
+    </div>
   )
 }
 
