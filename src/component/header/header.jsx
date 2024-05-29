@@ -8,22 +8,23 @@ import LemadeLogo from "../../assets/Le-Made-World.png";
 import { HambergerMenu } from "iconsax-react";
 import { Context } from "../../context";
 import Menu from "../menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { openMenu, setOpenMenu } = useContext(Context);
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (openMenu) {
-//         setOpenMenu(false);
-//       }
-//     };
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //       if (openMenu) {
+  //         setOpenMenu(false);
+  //       }
+  //     };
 
-//     window.addEventListener("scroll", handleScroll);
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, [openMenu]);
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => {
+  //       window.removeEventListener("scroll", handleScroll);
+  //     };
+  //   }, [openMenu]);
 
   return (
     <header>
@@ -56,19 +57,37 @@ const Header = () => {
                 </div>
             </div>
         </section> */}
-      <section className="bg-white p-5 py-6 flex justify-between items-center">
-        <div className=" hidden md:block  ">
-          <p>Home</p>
-          <p>Gallery</p>
-          <p>Services</p>
+      <section className="bg-white p-5 py-6  md:py-10 md:px-7  lg:px-12 xl:px-[100px] flex justify-between items-center">
+        <div className=" hidden md:flex md:gap-6  lg:gap-12 xl:gap-20 text-sm xl:text-lg">
+          <Link to="/">
+            <p>Home</p>
+          </Link>
+          <Link to="">
+            <p>Gallery</p>
+          </Link>
+          <Link to="/">
+            <p>Services</p>
+          </Link>
         </div>
         <div>
-          <img src={LemadeLogo} alt=" Lemade Logo" className="w-24" />
+          <Link to="/">
+            <img
+              src={LemadeLogo}
+              alt=" Lemade Logo"
+              className="w-24 md:w-[170px]"
+            />
+          </Link>
         </div>
-        <div className=" hidden md:block">
-          <p>Home</p>
-          <p>Gallery</p>
-          <p>Services</p>
+        <div className=" hidden md:flex md:gap-6  lg:gap-12 xl:gap-20 text-sm xl:text-lg">
+          <Link to="/about-us">
+            <p>About Us</p>
+          </Link>
+          <Link to="">
+            <p>FAQs</p>
+          </Link>
+          <Link to="/contact-us">
+            <p>Contact Us</p>
+          </Link>
         </div>
         <div className="md:hidden sm">
           <HambergerMenu onClick={() => setOpenMenu(!openMenu)} />

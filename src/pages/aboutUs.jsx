@@ -1,20 +1,23 @@
 import React from "react";
 import profilePicture from "../assets/profile-picture.png";
 import Header from "../component/header/header";
+import { useLocation } from "react-router-dom";
 
 const AboutUs = () => {
+  const params = useLocation();
+  
   return (
     <div>
-      {/* <Header/> */}
+      {params.pathname === "/about-us" && <Header />}
       <section>
-        <div className="text-center my-5">
-          <p className="font-semibold mb-3">Who we are</p>
-          <p className="font-extrabold text-3xl">
+        <div className="text-center my-10">
+          <p className="font-semibold mb-3 md:text-[20px]">Who we are</p>
+          <p className="font-extrabold text-3xl md:text-4xl">
             We Plan the Perfect Events.{" "}
           </p>
         </div>
-        <div className="text-center">
-          <p className="text-[15px] leading- px-3">
+        <div className="text-center md:flex md:items-center md:px-10 xl:px-28 my-6">
+          <p className="text-[15px] md:text-[16px] lg:text-[21px] xl:text-[25px] lg:mx-[70p] px-3 md:w-[50%] md:text-start">
             I’m Olemadi Uchechukwu The Creative director of{" "}
             <span className="font-medium">Le_madeworld_eventsandpastries</span>.
             Here we plan Events of different kinds ranging from: wedding, social
@@ -26,7 +29,7 @@ const AboutUs = () => {
               We are the best at what we do.
             </span>
           </p>
-          <div className="w-[330px] h-[350px mx-auto mt-5 mb-10 relative">
+          <div className="w-[300px] lg:w-[380px] xl:w-[400px] mx-auto mt-5 mb-10 relative">
             <img src={profilePicture} className="w-full h-full relative" />
             <div className="border w-full h-full absolute -z-10 rounded-md border-[#51009B] top-4 left-4"></div>
           </div>
