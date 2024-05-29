@@ -8,6 +8,28 @@ import { Link } from "react-router-dom";
 const menu = () => {
   const {setOpenMenu, openMenu} = useContext(Context)
 
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    const handleScroll = () => {
+      if (openMenu) {
+        setOpenMenu(false);
+        document.body.classList.remove('overflow-hidden');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [openMenu, setOpenMenu]);
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Gallery", path: "" },
