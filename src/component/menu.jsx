@@ -1,19 +1,20 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import LemadeLogo from "../assets/Le-Made-World.png";
 import { CloseCircle } from 'iconsax-react'
 import { Context } from "../context";
+import { Link } from "react-router-dom";
 
 
 const menu = () => {
-  const {setOpenMenu} = useContext(Context)
+  const {setOpenMenu, openMenu} = useContext(Context)
 
   const navLinks = [
-    { name: "Home", path: "" },
+    { name: "Home", path: "/" },
     { name: "Gallery", path: "" },
     { name: "Services", path: "" },
-    { name: "About Us", path: "" },
+    { name: "About Us", path: "/about-us" },
     { name: "FAQs", path: "" },
-    { name: "Contact Us", path: "" },
+    { name: "Contact Us", path: "/contact-us" },
   ];
   return (
     <section className="bg-black/50 w-screen  h-full  absolute z-50 top-0 left-0 ">
@@ -26,7 +27,9 @@ const menu = () => {
           <ul className="h-full">
             {navLinks.map((item, index) => (
               <li key={index} className="px-4 py-6 text-sm ">
+                <Link to={item.path} onClick={()=> setOpenMenu(false)}>
                 {item.name}
+                </Link>
               </li>
             ))}
           </ul>

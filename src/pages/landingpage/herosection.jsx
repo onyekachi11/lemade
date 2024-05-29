@@ -1,8 +1,5 @@
-import React, { useContext } from "react";
-import Menu from "../../component/menu";
-import { Context } from "../../context";
+import React from "react";
 const Herosection = () => {
-  const { openMenu } = useContext(Context);
   return (
     <>
       <section className="bg-[url('https://res.cloudinary.com/dukepqryi/image/upload/v1690502330/Heroimg_vri7ha.png')] bg-center bg-no-repeat bg-cover h-3/5">
@@ -12,16 +9,13 @@ const Herosection = () => {
             Let us plan and cater your perfect event today with our expert event
             planning and catering services.
           </p>
-          {/* <div> */}
           <button
             type="submit"
             className="text-xs rounded-full px-8 py-2 bg-purple-700 mt-5"
           >
             Book Now
           </button>
-          {/* </div> */}
         </div>
-        {openMenu && <Menu />}
       </section>
     </>
   );

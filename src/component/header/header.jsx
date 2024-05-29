@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
             </div>
         </section> */}
-        <section className='bg-white p-3 flex justify-between items-center' >
+        <section className='bg-white p-5 py-6 flex justify-between items-center' >
             <div className=' hidden md:block  '>
                 <p>Home</p>
                 <p>Gallery</p>
@@ -59,6 +59,7 @@ const Header = () => {
             <div className='md:hidden sm'> 
                 <HambergerMenu onClick={()=> setOpenMenu(!openMenu)}/>
             </div> 
+        {openMenu && <Menu />}           
         </section>
 
   </header>
