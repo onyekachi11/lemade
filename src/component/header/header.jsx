@@ -58,6 +58,13 @@ const Header = () => {
             </div>
         </section> */}
       <section className="bg-white p-5 py-6  md:py-10 md:px-7  lg:px-12 xl:px-[100px] flex justify-between items-center">
+      <Link to="/">
+            <img
+              src={LemadeLogo}
+              alt=" Lemade Logo"
+              className="w-24 md:w-[170px]"
+            />
+          </Link>
         <div className=" hidden md:flex md:gap-6  lg:gap-12 xl:gap-20 text-sm xl:text-lg">
           <Link to="/">
             <p>Home</p>
@@ -68,27 +75,17 @@ const Header = () => {
           <Link to="/">
             <p>Services</p>
           </Link>
-        </div>
-        <div>
-          <Link to="/">
-            <img
-              src={LemadeLogo}
-              alt=" Lemade Logo"
-              className="w-24 md:w-[170px]"
-            />
-          </Link>
-        </div>
-        <div className=" hidden md:flex md:gap-6  lg:gap-12 xl:gap-20 text-sm xl:text-lg">
           <Link to="/about-us">
             <p>About Us</p>
           </Link>
-          <Link to="">
+          {/* <Link to="">
             <p>FAQs</p>
-          </Link>
+          </Link> */}
           <Link to="/contact-us">
             <p>Contact Us</p>
           </Link>
         </div>
+
         <div className="md:hidden sm">
           <HambergerMenu onClick={() => setOpenMenu(!openMenu)} />
         </div>
